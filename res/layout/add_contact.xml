@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/contactNameText"
+        style="@style/TextViewStyle"
+        android:gravity="center"
+        android:text="@string/contact_name" />
+
+    <ImageButton
+        android:id="@+id/getContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/contactNameText"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/addperson" >
+    </ImageButton>
+
+    <EditText
+        android:id="@+id/contactName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/contactNameText"
+        android:layout_toLeftOf="@id/getContact"
+        android:layout_toRightOf="@id/contactNameText" />
+
+    <TextView
+        android:id="@+id/contactPhoneText"
+        style="@style/TextViewStyle"
+        android:layout_below="@id/contactNameText"
+        android:text="@string/contact_phone" />
+
+    <EditText
+        android:id="@+id/contactPhone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/contactPhoneText"
+        android:layout_below="@id/contactName"
+        android:layout_toRightOf="@id/contactPhoneText"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/contactEmailText"
+        style="@style/TextViewStyle"
+        android:layout_below="@id/contactPhoneText"
+        android:text="@string/contact_email" />
+
+    <EditText
+        android:id="@+id/contactEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/contactEmailText"
+        android:layout_below="@id/contactPhone"
+        android:layout_toRightOf="@id/contactEmailText"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/pickPhotoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contactEmailText"
+        android:layout_marginTop="10dp"
+        android:text="@string/contact_photo" />
+
+    <TextView
+        android:id="@+id/contactPhoto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/pickPhotoBtn"
+        android:layout_below="@id/contactEmail"
+        android:layout_toRightOf="@id/pickPhotoBtn" />
+
+    <Button
+        android:id="@+id/doneBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/done" />
+
+    <ImageView
+        android:id="@+id/capturedImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignRight="@+id/contactPhoto"
+        android:layout_alignTop="@+id/pickPhotoBtn"
+        android:src="@drawable/profile_edit" />
+
+</RelativeLayout>

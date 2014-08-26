@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".ContactsMainActivity" >
+
+    <Button
+        android:id="@+id/addNew"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="ADD NEW"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/addNew"
+        android:animateLayoutChanges="true"
+        android:divider="#80aeaeae"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+   
+
+</RelativeLayout>
+    
